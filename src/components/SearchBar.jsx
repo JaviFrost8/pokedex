@@ -4,20 +4,26 @@ export const SearchBar = ({onSearch}) => {
 
     const [searchTerm, setSearchTerm] = useState('')
 
-    const handleSearch = () => {
-        onSearch(searchTerm.toLowerCase())
+    const handleSubmit = () => {
+
+      if(searchTerm == ''){
+        searchTerm == 'pikachu'
+      }
+
+      onSearch(searchTerm.toLowerCase())
+
     }
 
   return (
-    <div>
+    <div className='search-container'>
         <input
             type='text'
-            placeholder='Introduce el nombre del pokémon'
+            placeholder='Busca un pokémon'
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
         />
 
-        <button onClick={handleSearch}>Buscar</button>
+        <button onClick={handleSubmit}>Buscar</button>
     </div>
   )
 }
