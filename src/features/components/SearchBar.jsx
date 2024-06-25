@@ -1,17 +1,13 @@
 import React, { useState } from 'react'
 
-export const SearchBar = ({onSearch}) => {
+export const SearchBar = ({onSearch, setPokemon}) => {
 
     const [searchTerm, setSearchTerm] = useState('')
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
 
-      if(searchTerm == ''){
-        searchTerm == 'pikachu'
-      }
-
-      onSearch(searchTerm.toLowerCase())
-
+      const data = await onSearch(searchTerm)
+      setPokemon(data)
     }
 
   return (
