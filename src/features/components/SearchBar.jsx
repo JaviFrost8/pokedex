@@ -6,7 +6,7 @@ export const SearchBar = ({onSearch, setPokemon}) => {
 
     const handleSubmit = async () => {
 
-      const data = await onSearch(searchTerm)
+      const data = await onSearch(searchTerm.toLowerCase())
       setPokemon(data)
     }
 
