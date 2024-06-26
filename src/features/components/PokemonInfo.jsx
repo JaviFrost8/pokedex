@@ -33,7 +33,7 @@ export const PokemonInfo = ({pokemon}) => {
               <TableCell component="th" scope="row" align='center'>
                 <img src={pokemon.sprites.front_default} alt={pokemon.name} />
               </TableCell>
-              <TableCell align="center">{pokemon.name}</TableCell>
+              <TableCell align="center">{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</TableCell>
               <TableCell align="right">{pokemon.id}</TableCell>
               <TableCell align="right">{pokemon.height}</TableCell>
               <TableCell align="right">{pokemon.weight}</TableCell>
