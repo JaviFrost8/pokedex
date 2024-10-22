@@ -8,6 +8,6 @@ export async function fetchPokemon(nombre){
     return data
 
   }catch(err){
-    return alert('No se ha encontrado ningún pokémon')
+    return alert('No se ha encontrado ningún pokémon con ese nombre')
   }
 }
