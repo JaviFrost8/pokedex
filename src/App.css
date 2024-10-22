@@ -3,9 +3,8 @@
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     background-color: lightblue;
 }
 
@@ -27,6 +26,17 @@ header img{
     justify-content: center;
     margin: 30px 0;
 
+}
+.bigContainer{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .main{
@@ -78,5 +88,86 @@ header img{
 .image-container{
     background-color: lightgray;
     border-radius: 50%;
+}
+
+.lateralBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background-color: #eee;
+    height: 100vh;
+    border-right: rgb(38, 65, 156) 3px solid;
+    background-image: url('./assets/img/pikachu.webp');
+    background-position-x: -100%;
+    background-position-y: -20%;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.lateralBar ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.lateralBar ul li{
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.lateralBar ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    padding: 7px 20px;
+    background-color: #eee;
+    transition: all 500ms ease;
+}
+
+.lateralBar ul li a:hover{
+    color: yellow;
+    background-color: rgb(26, 84, 192);
+    border-radius: 5px;
+}
+
+.pokemonAttacks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pokemonAttacks button{
+    margin: 10px 0;
+}
+
+.pokemonAttacks button:hover{
+    background-color: rgb(70, 149, 252);
+}
+
+.attackSelected{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(245, 245, 99);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.containerPokemons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerPokemon{
+    margin: 20px 40px;
+}
+
+.vs{
+    font-size: 21px;
+    font-weight: bold;
 }
 
