@@ -171,3 +171,16 @@ header img{
     font-weight: bold;
 }
 
+.potencia{
+    color: yellow;;
+}
+
+.attackSelectedContainer{
+    margin-top: 15px;
+}
+
+.reset{
+    background-color: white !important;
+    color: black !important;
+}
+
