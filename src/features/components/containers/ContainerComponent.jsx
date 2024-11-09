@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { fetchPokemon } from '../services/fetchPokemon'
-import { PokemonLogo } from './PokemonLogo'
-import { SearchBar } from './SearchBar'
-import { PokemonInfo } from './PokemonInfo'
-import { LateralBar } from './LateralBar'
+import { fetchPokemon } from '../../services/fetchPokemon'
+import { PokemonLogo } from '../PokemonLogo'
+import { SearchBar } from '../SearchBar'
+import { PokemonInfo } from '../PokemonInfo'
+import { LateralBar } from '../LateralBar'
 
 export const ContainerComponent = () => {
 
@@ -23,7 +23,6 @@ export const ContainerComponent = () => {
                 <div className='main'>
                     <SearchBar onSearch={fetchPokemon} setPokemon={setPokemon}/>
                     <PokemonInfo pokemon={pokemon} />
-                    {console.log(pokemon)}
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import './App.css'
-import { Battle } from './features/components/Battle';
-import { ContainerComponent } from './features/components/ContainerComponent'
+import { Battle } from '../src/features/components/containers/Battle';
+import { ContainerComponent } from './features/components/containers/ContainerComponent'
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 
 function App() {

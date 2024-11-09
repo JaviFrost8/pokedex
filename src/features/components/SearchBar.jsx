@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const SearchBar = ({ onSearch, pokemon, setPokemon, pokemon2, setPokemon2 }) => { 
+export const SearchBar = ({ onSearch, pokemon, setPokemon, setPokemon2}) => { 
 
   const [searchTerm, setSearchTerm] = useState('')
 
