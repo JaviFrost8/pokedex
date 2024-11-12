@@ -142,6 +142,7 @@ header img{
 
 .pokemonAttacks button{
     margin: 10px 0;
+    font-size: 18px;
 }
 
 .pokemonAttacks button:hover{
@@ -175,12 +176,73 @@ header img{
     color: yellow;;
 }
 
-.attackSelectedContainer{
+.infoContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 15px;
+    width: 240px;
+    height: 340px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    background-color: #cfe8f8;
+    box-shadow: 1px 2px 4px gray;
 }
 
 .reset{
     background-color: white !important;
     color: black !important;
 }
+
+.selectionAttack{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pokemonName{
+    font-weight: bold;
+    color: rgb(151, 1, 1);
+}
+
+.pokeName{
+    margin: 20px 0;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.pokeNameContainer{
+    margin-top: 30px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.imgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eee;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.info{
+    font-weight: bold;
+}
+
+.infoDato{
+    margin: 3px 0;
+}
+
+.id{
+    margin-top: 4px;
+}
+
+.pokeType{
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+
 
