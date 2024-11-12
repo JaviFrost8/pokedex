@@ -34,7 +34,7 @@ export const PokemonAttack = ({ pokemon }) => {
 
   useEffect(() => {
     if (pokemon) {
-      const fetchAttack = async () => {
+      const fetchAttack = async () => { //Una petición API que nos devuelve los 4 ataques más potentes del pokemon.
         setLoading(true);
         const fetchedAttacks = await Promise.all(
           pokemon.moves.slice(pokemon.moves.length - 4).map(async (attack) => {
@@ -64,7 +64,7 @@ export const PokemonAttack = ({ pokemon }) => {
     setIsAttackSelected(true)
   }
 
-  function getType(){
+  function getType(){ //función para obtener los valores del objeto pokeTypes mediante sus keys.
     const typeKeys = Object.keys(pokeTypes);
     const keyFind = typeKeys.find(type => type === pokemon.types[0].type.name);
     const typeValue = pokeTypes[keyFind]
