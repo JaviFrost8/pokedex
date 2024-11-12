@@ -17,6 +17,7 @@ export const SearchBar = ({ onSearch, pokemon, setPokemon, setPokemon2}) => {
       }else{
         const data2 = await onSearch(searchTerm.toLowerCase())
         setPokemon2(data2)
+        setSearchTerm('')
       }
     }
   
